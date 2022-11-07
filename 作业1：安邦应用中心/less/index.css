@@ -2,3 +2,131 @@
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #f2f2f2;
+}
+/* 下划线 */
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: #f8f8f8;
+  line-height: 5rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+.header a {
+  width: 4rem;
+  height: 100%;
+  background: url(../image/icon_back.png) no-repeat 16px 13px;
+  background-size: auto 45%;
+  float: left;
+}
+.header p {
+  font-size: 1.9rem;
+  color: #0077ff;
+  float: left;
+}
+/* 应用安装部分 */
+.box {
+  width: 100%;
+  height: 10rem;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #ffffff;
+}
+.box span {
+  float: left;
+  width: 25%;
+  height: 100%;
+  background: url(../image/logo01.png) no-repeat center;
+  background-size: auto 70%;
+}
+.box p {
+  float: left;
+  width: 60%;
+  height: 100%;
+  padding: 1.8rem 0rem;
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  color: #666666;
+}
+.box p .text {
+  background: none;
+  width: 100%;
+  font-size: 1.3rem;
+  float: left ;
+  font-weight: 600;
+}
+.box a {
+  float: left;
+  width: 13%;
+  height: 30%;
+  margin-top: 5rem;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 3rem;
+  color: #0078ff;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  border: 1px solid #0078ff;
+}
+/* 文字介绍部分 */
+.content {
+  width: 100%;
+  height: 17rem;
+  padding: 1.5rem 0rem;
+  background-color: #ffffff;
+}
+.content h4 {
+  width: 94%;
+  padding: 0 3%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.content p {
+  width: 94%;
+  padding: 0 3%;
+  line-height: 2.1rem;
+  font-size: 1.3rem;
+  color: #666666;
+}
+/* 底部样式 */
+footer {
+  position: fixed;
+  left: 0rem;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 5rem;
+  padding-top: 0.2rem;
+  background-color: #f8f8f8;
+  border-top: 1px solid #dcdcdc;
+}
+footer a {
+  display: inline-block;
+  width: 32.33333333%;
+  padding-top: 2.5rem;
+  line-height: 2.9rem;
+  font-size: 1.2rem;
+  height: 2rem;
+  text-align: center;
+}
+footer .a1 {
+  background: url(../image/btn_01-1.png) no-repeat center 0.2rem;
+  background-size: auto 55%;
+  color: #0077ff;
+}
+footer .a2 {
+  background: url(../image/btn_02.png) no-repeat center 0.2rem;
+  background-size: auto 55%;
+  color: #999999;
+}
+footer .a3 {
+  background: url(../image/btn_03.png) no-repeat center 0.5rem;
+  background-size: auto 45%;
+  color: #999999;
+}
