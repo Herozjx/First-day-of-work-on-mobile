@@ -70,3 +70,6 @@ main dl dd {
   width: 65%;
   float: left;
 }
+main .work {
+  height: 9rem;
+}
