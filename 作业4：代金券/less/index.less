@@ -2,3 +2,146 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    font-size: 10px;
+    background-color: #eeeeee;
+}
+a{
+    text-decoration: none;
+}
+/* 公用下边框 */
+.borderBottom(@px:1px,@color:#d1d1d1){
+    border-bottom: @px solid @color;
+}
+header{
+   width: 100%;
+   height: 4rem;
+   background-color: #e6071b;
+   position: fixed;
+   left: 0;
+   top: 0;
+   text-align: center;
+   z-index: 4;
+   a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+    background: url(../images/back.png) no-repeat center;
+    background-size: 80% 80%;
+   }
+   span{
+    display: block;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    color: #fdffff;
+   }
+}
+/* 主体样式 */
+main{
+    padding: 5rem 1rem 0;
+    margin-top: -1rem;
+    width: 100%;
+    box-sizing: border-box;
+    .gear{
+        width: 100%;
+        height: 1.6rem;
+        display: block;
+        position: relative;
+        background: url(../images/border.png) ;
+    }
+    .top{
+       /*  position: relative; */
+        padding: 1rem;
+        margin-top: -0.8rem;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        box-sizing: border-box;
+        .toptext{
+            margin-top: 1rem;
+            position: relative;
+            .topmain{
+                width: 80%;
+                display: flex;
+                img{
+                    margin-right: 0.5rem;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    border-radius: 50%;
+                }
+                .introduce{
+                    font-size: 1.6rem;
+                    color: #666666;
+                }
+            }
+            .touse{
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: inline-block;
+                height: 2rem;
+                width: 5.5rem;
+                line-height: 2rem;
+                text-align: center;
+                color: white;
+                background-color: #e6071b;
+            }
+            .touse2{
+                position: absolute;
+                right: 0;
+                top: 0.5rem;
+                transform: rotate(-30deg);
+                color: #b7b7b7;
+                background-color:white;
+                border: 1px solid #b7b7b7;
+            }
+        }
+        .round{
+            position: relative;
+            margin-top: 1rem;
+            width: 100%;
+            height: 0.1rem;
+            background-color: #d8d8d8;
+            span:nth-of-type(1){
+                position: absolute;
+                left: -15px;
+                top: -5px;
+                height: 1rem;
+                width: 1rem;
+                background: #eee;
+                border-radius: 50%;
+            }
+            span:nth-of-type(2){
+                position: absolute;
+                right: -15px;
+                top: -5px;
+                height: 1rem;
+                width: 1rem;
+                background: #eee;
+                border-radius: 50%;
+            }
+           
+        }
+        .Ticket{
+            margin-top: 0.7rem;
+            font-size: 1.4rem;
+            text-indent: 0.4rem;
+            color: #666666;
+            height: 2.5rem;
+            span{
+                font-size: 1.6rem;
+                color: #e6071b;
+            }
+        }
+        
+    }
+    .gearbottom{
+        width: 100%;
+        height: 1.6rem;
+        display: block;
+        margin-top: -0.8rem;
+        background: url(../images/border.png);
+    }
+}

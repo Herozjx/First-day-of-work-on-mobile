@@ -2,3 +2,74 @@
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+}
+/* 公用下边框 */
+header {
+  width: 100%;
+  height: 6.5rem;
+  line-height: 6.5rem;
+  font-size: 2.6rem;
+  text-align: center;
+  background-color: #72cadd;
+  color: white;
+}
+header p {
+  display: inline-block;
+}
+header span {
+  width: 2.5rem;
+  height: 4rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+header span:nth-of-type(1) {
+  float: left;
+  margin-left: 1rem;
+  background: url(../image/icon_arr_back.png) no-repeat center;
+  background-size: contain;
+}
+header span:nth-of-type(2) {
+  width: 3rem;
+  height: 4rem;
+  float: right;
+  margin-right: 0.5rem;
+  background: url(../image/icon_arr_more.png) no-repeat 0px 11px;
+  background-size: contain;
+}
+/* 主体 */
+main .submit {
+  width: 100%;
+  height: 6rem;
+  background-color: #f2f2f2;
+  border-bottom: 3px solid #d1d1d1;
+  text-indent: 1.5rem;
+  font-size: 2rem;
+  line-height: 6rem;
+  color: #505050;
+}
+main dl {
+  width: 97%;
+  border-bottom: 1px solid #d1d1d1;
+  margin: 0 auto;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  color: #808080;
+  font-size: 1.6rem;
+}
+main dl dt {
+  width: 35%;
+  float: left;
+}
+main dl dd {
+  width: 65%;
+  float: left;
+}
+main .work {
+  height: 9rem;
+}
