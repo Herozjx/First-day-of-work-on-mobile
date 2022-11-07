@@ -7,7 +7,10 @@ body {
   font-size: 10px;
   background-color: #eeeeee;
 }
-/* 公用色号 */
+a {
+  text-decoration: none;
+}
+/* 公用下边框 */
 header {
   width: 100%;
   height: 4rem;
@@ -31,4 +34,25 @@ header span {
   font-size: 1.7rem;
   line-height: 4rem;
   color: #fdffff;
+}
+/* 主体部分 */
+main {
+  width: 100%;
+  padding-top: 4rem;
+  box-sizing: border-box;
+}
+main a {
+  border-bottom: 1px solid #d1d1d1;
+  padding: 0 1rem;
+  display: block;
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  font-size: 1.6rem;
+  color: #333333;
+  background-color: #ffffff;
+}
+main .clear {
+  margin-bottom: 1rem;
+  border: none;
 }
