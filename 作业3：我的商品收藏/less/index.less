@@ -9,8 +9,11 @@ html,body{
 a{
     text-decoration: none;
 }
+.color{
+    color: #e6071b !important;
+}
 /* 公用下边框 */
-.borderBottom(@px:1px,@color:#d1d1d1){
+.borderBottom(@px:1px,@color:#d8d8d8){
     border-bottom: @px solid @color;
 }
 header{
@@ -20,6 +23,7 @@ header{
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 3;
     .logo{
      position: absolute;
      left: 0;
@@ -62,5 +66,83 @@ header{
         line-height: 4rem;
         color:#ffffff;
         font-size: 1.3rem;
+    }
+}
+/* 主体部分 */
+ul{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4rem 1rem 0;
+    box-sizing: border-box;
+    li{
+        list-style: none;
+        padding: 1rem 0;
+        .borderBottom;
+        box-sizing: border-box;
+        overflow: hidden;
+        .img{
+            position: relative;
+           
+            img{
+                position: absolute;
+            }
+            .soldOut{
+                width: 4.5rem;
+                height: 4.5rem;
+                left: 0.6rem;
+                top: 0.6rem;
+                z-index: 2;
+            }
+            .logo{
+                width: 6rem;
+                height: 6rem;
+                display: inline-block;
+            }
+        }
+        .text{
+            padding-left: 7rem;
+           
+            p{
+               font-size:  1.4rem;
+               line-height: 1.8rem;
+               color: #333333;
+               overflow: hidden;
+            }
+        }
+        .cote{
+            width: 80%;
+            height: 100%;
+            float: right;
+            overflow: hidden;
+            // background-color: aqua;
+            font-style: 1.2rem;
+            line-height: 2.5rem;
+            overflow: hidden;
+            .price{
+                float: left;
+                i{
+                    font-style: normal;
+                    color: #666666;
+                }
+                span{
+                    font-size: 1.8rem;
+                    color: #666666;
+                }
+                .original{
+                    font-size: 1.2rem;
+                    color: #978888;
+                    text-decoration: line-through;
+                }
+            }
+            a{
+                width: 5.4rem;
+                height: 2.5rem;
+                text-align: center;
+                border-radius: 0.3rem;
+                border: 0.1rem solid #d8d8d8;
+                float: right;
+                color: #888888;
+            }
+        }
     }
 }
